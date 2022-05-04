@@ -8,6 +8,6 @@ const port = 3001;
 
 app.use(express.static("client"));
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Server started on ${port}`);
 });
